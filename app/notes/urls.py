@@ -10,6 +10,6 @@ router.register(r'notes', views.NoteViewSet)
 urlpatterns = [
     # path('', include(router.urls)),
     # path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('notes/', views.NoteList.as_view()),
-    path('notes/<int:pk>/', views.NoteDetailView.as_view())
+    path('notes/', views.NoteList.as_view(), name='list'),
+    path('notes/<int:pk>/', views.NoteDetailView.as_view(), name='detail')
 ]
