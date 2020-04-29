@@ -1,6 +1,6 @@
 from .local import *
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['saturday-developers-app.herokuapp.com']
 
